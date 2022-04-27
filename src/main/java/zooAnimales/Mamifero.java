@@ -21,6 +21,8 @@ public class Mamifero extends Animal{
 					boolean pelaje,
 					int patas) {
 		super(nombre, edad, habitat, genero);
+		this.patas = patas;
+		this.pelaje = pelaje;
 		Mamifero.listado.add(this);
 	}
 	
