@@ -16,6 +16,10 @@ public class Zoologico {
 		return this.nombre;
 	}
 	
+	public String getUbicacion() {
+		return this.ubicacion;
+	}
+	
 	public void agregarZonas(Zona nuevaZona) {
 		int n = zonas.length;
 		Zona[] nuevaZonas = new Zona[n+1];
