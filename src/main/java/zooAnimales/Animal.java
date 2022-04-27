@@ -9,7 +9,7 @@ public class Animal {
 	protected int edad;
 	protected String habitat;
 	protected String genero;
-	protected ArrayList<Zona> zona;
+	protected ArrayList<Zona> zona = new ArrayList<Zona>();
 	
 	public Animal() {}
 	
@@ -18,7 +18,7 @@ public class Animal {
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		totalAnimales++;
+		Animal.totalAnimales++;
 	}
 
 	public String getHabitat() {
@@ -57,22 +57,21 @@ public class Animal {
 	
 	@Override
 	public String toString() {
-		String mensaje_1 = "Mi nombre es " + this.nombre + 
-				", tengo una edad de " + this.edad + 
-				", habito en " + this.habitat + 
-				" y mi genero es " + this.genero;
-		
-		String mensaje_2 = "Mi nombre es " + this.nombre + 
-				", tengo una edad de " + this.edad + 
-				", habito en " + this.habitat + 
-				" y mi genero es " + this.genero +
-				", la zona en la que me ubico es " + this.zona.get(0) +
-				", en el " + this.zona.get(0).getZoo().getNombre();
-		
+						
 		if(this.zona.size() == 0) {
+			String mensaje_1 = "Mi nombre es " + this.nombre + 
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero;
 			return mensaje_1;
 		}
 		else {
+			String mensaje_2 = "Mi nombre es " + this.nombre + 
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero +
+					", la zona en la que me ubico es " + this.zona.get(0) +
+					", en el " + this.zona.get(0).getZoo().getNombre();
 			return mensaje_2;
 		}
 	}
