@@ -12,6 +12,10 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 	
+	public Zona[] getZona() {
+		return this.zonas;
+	}
+	
 	public String getNombre() {
 		return this.nombre;
 	}
