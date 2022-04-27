@@ -9,7 +9,6 @@ public class Ave extends Animal {
 	private String colorPlumas;
 	
 	public Ave() {
-		super();
 	}
 	
 	public Ave(String nombre, 

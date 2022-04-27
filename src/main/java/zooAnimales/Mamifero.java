@@ -10,7 +10,6 @@ public class Mamifero extends Animal{
 	private int patas;
 	
 	public Mamifero() {
-		super();
 	}
 	
 	public Mamifero (String nombre, 

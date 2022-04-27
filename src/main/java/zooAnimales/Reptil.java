@@ -10,7 +10,6 @@ public class Reptil extends Animal {
 	private int largoCola;
 	
 	public Reptil() {
-		super();
 	}
 	
 	public Reptil (String nombre, 
