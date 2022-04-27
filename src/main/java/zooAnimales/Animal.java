@@ -1,6 +1,7 @@
 package zooAnimales;
 
 import gestion.Zona;
+import java.util.ArrayList;
 
 public class Animal {
 	private static int totalAnimales;
@@ -8,7 +9,7 @@ public class Animal {
 	protected int edad;
 	protected String habitat;
 	protected String genero;
-	protected Zona[] zona;
+	protected ArrayList<Zona> zona;
 	
 	public Animal() {}
 	
@@ -56,6 +57,23 @@ public class Animal {
 	
 	@Override
 	public String toString() {
-		return "";
+		String mensaje_1 = "Mi nombre es " + this.nombre + 
+				", tengo una edad de " + this.edad + 
+				", habito en " + this.habitat + 
+				" y mi genero es " + this.genero;
+		
+		String mensaje_2 = "Mi nombre es " + this.nombre + 
+				", tengo una edad de " + this.edad + 
+				", habito en " + this.habitat + 
+				" y mi genero es " + this.genero +
+				", la zona en la que me ubico es " + this.zona.get(0) +
+				", en el " + this.zona.get(0).getZoo().getNombre();
+		
+		if(this.zona.size() == 0) {
+			return mensaje_1;
+		}
+		else {
+			return mensaje_2;
+		}
 	}
 }
