@@ -5,6 +5,8 @@ public class Zoologico {
 	private String ubicacion;
 	private Zona[] zonas;
 	
+	public Zoologico() {}
+	
 	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
